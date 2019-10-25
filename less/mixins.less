@@ -1,1 +1,18 @@
 // Mixins in here
+
+.custom-btn (@textcolor, @bg-color) {
+  margin: 1% 2%;
+  padding: 5%;
+  text-align: center;
+  width: 80%;
+  height: 17%;
+  font-size: 2rem;
+  border-radius: 10px;
+  background-color: @bg-color;
+  color: @textcolor;
+
+  @media @mobile {
+    width: 90%;
+    height: 20%;
+  }
+}
